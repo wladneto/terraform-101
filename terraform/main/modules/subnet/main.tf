@@ -6,6 +6,7 @@ resource "aws_subnet" "public_subnet" {
 
   tags = {
     Name = "MinhaPublicSubnet"
+    Owner = var.tag_owner
   }
 }
 
@@ -18,5 +19,6 @@ resource "aws_subnet" "private_subnet" {
 
   tags = {
     Name = "MinhaPrivateSubnet"
+    Owner = var.tag_owner
   }
 }

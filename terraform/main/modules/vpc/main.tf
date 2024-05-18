@@ -5,5 +5,6 @@ resource "aws_vpc" "giropops_vpc" {
 
   tags = {
     Name = "MinhaVPC"
+    Owner = var.tag_owner
   }
 }

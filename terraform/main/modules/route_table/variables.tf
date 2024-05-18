@@ -22,3 +22,8 @@ variable "private_subnet_id" {
   description = "The private subnet ID to be associated with the route table"
   type        = string
 }
+
+variable "tag_owner" {
+  description = "The tag of owner."
+  type        = string
+}

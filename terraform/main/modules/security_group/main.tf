@@ -37,5 +37,6 @@ resource "aws_security_group" "webserver_sg" {
 
   tags = {
     Name = "WebServerSG"
+    Owner = var.tag_owner
   }
 }

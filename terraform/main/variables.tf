@@ -21,3 +21,9 @@ variable "public_key" {
   type        = string
   default     = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZ6"
 }
+
+variable "tag_owner" {
+  description = "The tag for owner of this stack"
+  type        = string
+  default     = "Linux Tips"
+}

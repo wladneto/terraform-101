@@ -3,5 +3,6 @@ resource "aws_internet_gateway" "my_igw" {
 
   tags = {
     Name = "MeuInternetGateway"
+    Owner = var.tag_owner
   }
 }

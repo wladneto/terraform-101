@@ -11,6 +11,7 @@ resource "aws_instance" "webserver" {
 
   tags = {
     Name = "WebServer"
+    Owner = var.tag_owner
   }
 
   user_data = <<-EOF

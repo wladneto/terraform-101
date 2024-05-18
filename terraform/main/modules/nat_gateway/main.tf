@@ -4,6 +4,7 @@ resource "aws_eip" "nat_gateway_ip" {
 
   tags = {
     Name = "NATGatewayEIP"
+    Owner = var.tag_owner
   }
 }
 
@@ -12,5 +13,6 @@ resource "aws_nat_gateway" "my_nat_gateway" {
   subnet_id     = var.public_subnet_id
   tags = {
     Name = "NATGateway"
+    Owner = var.tag_owner
   }
 }

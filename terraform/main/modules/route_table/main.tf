@@ -8,6 +8,7 @@ resource "aws_route_table" "public_route_table" {
 
   tags = {
     Name = "RouteTablePublica"
+    Owner = var.tag_owner
   }
 }
 
@@ -26,6 +27,7 @@ resource "aws_route_table" "private_route_table" {
 
   tags = {
     Name = "RouteTablePrivada"
+    Owner = var.tag_owner
   }
 }
 
