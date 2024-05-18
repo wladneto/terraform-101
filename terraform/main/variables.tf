@@ -13,13 +13,13 @@ variable "key_name" {
 variable "ami_id" {
   description = "The AMI ID to be used for the EC2 instance."
   type        = string
-  default     = "ami-0f29c8402f8cce65c"
+  default     = "ami-0b0ea68c435eb488d"
 }
 
 variable "public_key" {
   description = "The public key to be used for the AWS Key Pair."
   type        = string
-  default     = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZ6"
+  default     = "ssh-rsa AAAAB3N YOURKEY"
 }
 
 variable "tag_owner" {
